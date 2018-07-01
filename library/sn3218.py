@@ -1,7 +1,7 @@
 import sys
 
 try:
-    from smbus import SMBus
+    from smbus2 import SMBus
 except ImportError:
     if sys.version_info[0] < 3:
         raise ImportError("This library requires python-smbus\nInstall with: sudo apt install python-smbus")
